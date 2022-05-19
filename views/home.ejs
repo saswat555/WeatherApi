@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            background-color: aliceblue;
+            font-size: 20px;
+            width: fit-content;
+            align-items: center;
+            z-index: 2;
+            padding: 200PX;
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <H1>ENTER THE NAME OF CITIES SEPERATED BY COMMAS</H1>
+        <BR><BR><BR><BR><BR><BR>
+    <form action='/getWeather' method="POST">
+        <input type="text" placeholder="Enter cities" name="cities"><br><br>
+        <button>Submit</button>
+    </form>
+</center>
+</body>
+</html>
